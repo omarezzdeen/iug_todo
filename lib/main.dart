@@ -6,7 +6,7 @@ import 'package:state_managment/news_app.dart';
 void main() {
   runApp(MaterialApp(
     theme: ThemeData.light(),
-    home: NewsApp()));
+    home: NewsHomeScreen()));
 }
 
 class LoginScreen extends StatefulWidget {

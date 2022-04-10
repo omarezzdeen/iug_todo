@@ -1,7 +1,7 @@
-import 'package:state_managment/news_model.dart';
+import 'package:state_managment/models/news_model.dart';
 
 List<NewsModel> newsList = newsData.map((e) {
-  return NewsModel.fromMap(e);
+  return NewsModel(e);
 }).toList();
 List<Map<String, dynamic>> newsData = [
   {
