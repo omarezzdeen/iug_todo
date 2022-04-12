@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:state_managment/data/dummy_data.dart';
-import 'package:state_managment/models/news_model.dart';
-import 'package:state_managment/pages/all_news_screen.dart';
-import 'package:state_managment/pages/favourite_news_wcreen.dart';
+import 'package:state_managment/news_app/pages/all_news_screen.dart';
+import 'package:state_managment/news_app/pages/favourite_news_wcreen.dart';
 
 class NewsHomeScreen extends StatelessWidget {
   @override

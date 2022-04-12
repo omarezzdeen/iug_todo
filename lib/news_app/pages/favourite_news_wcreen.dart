@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:state_managment/data/dummy_data.dart';
-import 'package:state_managment/news_app.dart';
-import 'package:state_managment/widgets/NewsWidget.dart';
+import 'package:state_managment/news_app/data/dummy_data.dart';
+import 'package:state_managment/news_app/widgets/NewsWidget.dart';
 
 class FavouriteNewsScreen extends StatefulWidget {
   @override

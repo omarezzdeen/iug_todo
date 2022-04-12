@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:state_managment/models/news_model.dart';
+import 'package:state_managment/news_app/models/news_model.dart';
 
 class NewsWidget extends StatefulWidget {
   NewsModel newsModel;
