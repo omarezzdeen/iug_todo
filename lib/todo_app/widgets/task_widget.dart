@@ -4,7 +4,9 @@ import 'package:state_managment/todo_app/models/task_model.dart';
 class TaskWidget extends StatelessWidget {
   Function fun;
   Task task;
+
   TaskWidget(this.task, this.fun);
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -16,6 +18,13 @@ class TaskWidget extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 8),
       child: CheckboxListTile(
         title: Text(task.title),
+        secondary: IconButton(
+          icon: const Icon(Icons.delete, color: Colors.red),
+          onPressed: () {
+            task.isDeleted = true;
+            fun(task);
+          },
+        ),
         value: task.isCompleted,
         onChanged: (v) {
           fun(task);

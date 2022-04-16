@@ -16,10 +16,14 @@ class _TodoHomePageState extends State<TodoHomePage> {
     tasksList[index].isCompleted = !tasksList[index].isCompleted;
     setState(() {});
   }
+  deleteTask(Task task) {
+    int index = tasksList.indexOf(task);
+    tasksList.removeAt(index);
+    setState(() {});
+  }
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return DefaultTabController(
         length: 3,
         child: Scaffold(
@@ -42,9 +46,9 @@ class _TodoHomePageState extends State<TodoHomePage> {
           ),
           body: TabBarView(
             children: [
-              AllTasksScreen(changeTaskCompleteness),
-              CompleteTasksScreen(changeTaskCompleteness),
-              InCompleteTasksScreen(changeTaskCompleteness)
+              AllTasksScreen(changeTaskCompleteness, deleteTask),
+              CompleteTasksScreen(changeTaskCompleteness, deleteTask),
+              InCompleteTasksScreen(changeTaskCompleteness, deleteTask)
             ],
           ),
         ));

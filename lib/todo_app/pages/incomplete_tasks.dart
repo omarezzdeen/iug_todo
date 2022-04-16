@@ -3,8 +3,8 @@ import 'package:state_managment/todo_app/data/tasks_data.dart';
 import 'package:state_managment/todo_app/widgets/task_widget.dart';
 
 class InCompleteTasksScreen extends StatelessWidget {
-  Function fun;
-  InCompleteTasksScreen(this.fun);
+  Function fun, funDeleted;
+  InCompleteTasksScreen(this.fun, this.funDeleted);
   @override
   Widget build(BuildContext context) {
     // TODO: implement build

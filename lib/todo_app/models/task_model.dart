@@ -1,5 +1,6 @@
 class Task {
   String title;
   bool isCompleted;
-Task(this.title,[this.isCompleted=false]);
+  bool isDeleted;
+Task(this.title,[this.isCompleted=false,this.isDeleted=false]);
 }

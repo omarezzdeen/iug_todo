@@ -3,8 +3,9 @@ import 'package:state_managment/todo_app/data/tasks_data.dart';
 import 'package:state_managment/todo_app/widgets/task_widget.dart';
 
 class CompleteTasksScreen extends StatelessWidget {
-  Function fun;
-  CompleteTasksScreen(this.fun);
+  Function fun, funDeleted;
+
+  CompleteTasksScreen(this.fun, this.funDeleted);
 
   @override
   Widget build(BuildContext context) {
